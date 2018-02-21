@@ -1,0 +1,63 @@
+textarea {
+	max-height: 350px;
+	min-height: 200px;
+	resize: vertical;
+}
+header {
+	margin-top: 20px;
+}
+header h1 {
+	padding: 20px 0;
+}
+header h1 a {
+	color: inherit;
+}
+header h1 a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+th, td {
+	vertical-align: middle !important;
+}
+dt {
+	text-align: justify !important;
+}
+dt, dd {
+	margin-bottom: 10px;
+}
+section {
+	margin: 20px 0;
+}
+section h2 {
+	border-bottom: 1px solid #bbb;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+footer {
+	border-top: 1px solid #bbb;
+	padding-top: 20px;
+}
+.widget {
+	margin: 10px 0;
+}
+.widget a {
+	margin-right: 5px;
+}
+.widget a:hover, .widget a:focus {
+	outline: none;
+	text-decoration: inherit;
+}
+.widget a img:hover {
+	opacity: .5;
+}
+.message {
+	border-radius: 10px;
+	padding: 20px;
+}
+.img-circle {
+	border-radius: 20px;
+}
+.box {
+	margin: 20px;
+	padding: 20px;
+}

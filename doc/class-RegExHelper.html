@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class RegExHelper | PIVT</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AdminAuthController.html">AdminAuthController</a></li>
+				<li><a href="class-AdminCityController.html">AdminCityController</a></li>
+				<li><a href="class-AdminInboxController.html">AdminInboxController</a></li>
+				<li><a href="class-AdminLoginController.html">AdminLoginController</a></li>
+				<li><a href="class-AdminModel.html">AdminModel</a></li>
+				<li><a href="class-AdminUserController.html">AdminUserController</a></li>
+				<li><a href="class-AdminUserLoginController.html">AdminUserLoginController</a></li>
+				<li><a href="class-AdminVehicleController.html">AdminVehicleController</a></li>
+				<li><a href="class-AuthController.html">AuthController</a></li>
+				<li><a href="class-CityModel.html">CityModel</a></li>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-ContactController.html">ContactController</a></li>
+				<li><a href="class-Controller.html">Controller</a></li>
+				<li><a href="class-DB.html">DB</a></li>
+				<li><a href="class-DeliveryCodeModel.html">DeliveryCodeModel</a></li>
+				<li><a href="class-Hash.html">Hash</a></li>
+				<li><a href="class-HomeController.html">HomeController</a></li>
+				<li><a href="class-Http.html">Http</a></li>
+				<li><a href="class-Logger.html">Logger</a></li>
+				<li><a href="class-MessageModel.html">MessageModel</a></li>
+				<li><a href="class-Misc.html">Misc</a></li>
+				<li><a href="class-Model.html">Model</a></li>
+				<li><a href="class-OfferModel.html">OfferModel</a></li>
+				<li><a href="class-Redirect.html">Redirect</a></li>
+				<li><a href="class-RegExConstants.html">RegExConstants</a></li>
+				<li class="active"><a href="class-RegExHelper.html">RegExHelper</a></li>
+				<li><a href="class-Sanitize.html">Sanitize</a></li>
+				<li><a href="class-ServiceModel.html">ServiceModel</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-ShipmentModel.html">ShipmentModel</a></li>
+				<li><a href="class-ShipmentUpdateModel.html">ShipmentUpdateModel</a></li>
+				<li><a href="class-UserController.html">UserController</a></li>
+				<li><a href="class-UserLoginModel.html">UserLoginModel</a></li>
+				<li><a href="class-UserModel.html">UserModel</a></li>
+				<li><a href="class-UserOfferController.html">UserOfferController</a></li>
+				<li><a href="class-UserServiceController.html">UserServiceController</a></li>
+				<li><a href="class-UserShipmentController.html">UserShipmentController</a></li>
+				<li><a href="class-VehicleModel.html">VehicleModel</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-ModelInterface.html">ModelInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class RegExHelper</h1>
+
+
+	<div class="description">
+	<p>Klasa za pomoć pri radu sa regularnim izrazima
+Sadrži funkcije za validaciju na strani servera i kontrolu unosa na strani klijenta
+Obezbeđuje konzistentnost u regularnim izrazima koji se koriste kroz ceo ovaj projekat</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-RegExHelper.html#3-153" title="Go to source code">sys/classes/RegExHelper.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="patternForEmail" id="_patternForEmail">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForEmail">#</a>
+		<code><a href="source-class-RegExHelper.html#11-18" title="Go to source code">patternForEmail</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za adresu elektronske pošte
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za adresu elektronske pošte
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateEmail" id="_validateEmail">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateEmail">#</a>
+		<code><a href="source-class-RegExHelper.html#20-31" title="Go to source code">validateEmail</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija adrese elektronske pošte
+Napomena: autor ovog rada se opredelio da validaciju e-pošte radi preko
+načina koji je preporučen za PHP (filter_var metodom)
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija adrese elektronske pošte
+Napomena: autor ovog rada se opredelio da validaciju e-pošte radi preko
+načina koji je preporučen za PHP (filter_var metodom)
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patternForFirstOrLastNameInSerbian" id="_patternForFirstOrLastNameInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForFirstOrLastNameInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#33-40" title="Go to source code">patternForFirstOrLastNameInSerbian</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za vlastito ime ili prezime sa srpskom latinicom
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za vlastito ime ili prezime sa srpskom latinicom
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateFirstOrLastNameInSerbian" id="_validateFirstOrLastNameInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateFirstOrLastNameInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#42-51" title="Go to source code">validateFirstOrLastNameInSerbian</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija vlastitog imena ili prezimena na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija vlastitog imena ili prezimena na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patternForCityNameInSerbian" id="_patternForCityNameInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForCityNameInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#53-60" title="Go to source code">patternForCityNameInSerbian</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za ime grada
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za ime grada
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateCityNameInSerbian" id="_validateCityNameInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateCityNameInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#62-71" title="Go to source code">validateCityNameInSerbian</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija imena grada na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija imena grada na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patternForVehicleNameInSerbian" id="_patternForVehicleNameInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForVehicleNameInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#73-80" title="Go to source code">patternForVehicleNameInSerbian</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za prevoz
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za prevoz
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateVehicleNameInSerbian" id="_validateVehicleNameInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateVehicleNameInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#82-91" title="Go to source code">validateVehicleNameInSerbian</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija prevoza na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija prevoza na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patternForUserContentInSerbian" id="_patternForUserContentInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForUserContentInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#93-100" title="Go to source code">patternForUserContentInSerbian</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za korisnički unet tekst (npr. poruka)
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za korisnički unet tekst (npr. poruka)
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateUserContentInSerbian" id="_validateUserContentInSerbian">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateUserContentInSerbian">#</a>
+		<code><a href="source-class-RegExHelper.html#102-111" title="Go to source code">validateUserContentInSerbian</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija teksta poslatog od strane korisnika na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija teksta poslatog od strane korisnika na srpskoj latinici
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patternForNumberInteger" id="_patternForNumberInteger">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForNumberInteger">#</a>
+		<code><a href="source-class-RegExHelper.html#113-120" title="Go to source code">patternForNumberInteger</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za celobrojni broj (int)
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za celobrojni broj (int)
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateNumberInteger" id="_validateNumberInteger">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateNumberInteger">#</a>
+		<code><a href="source-class-RegExHelper.html#122-131" title="Go to source code">validateNumberInteger</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija celobrojnog broja (int)
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija celobrojnog broja (int)
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="patternForNumberFloat" id="_patternForNumberFloat">
+
+		<td class="attributes"><code>
+			final public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_patternForNumberFloat">#</a>
+		<code><a href="source-class-RegExHelper.html#133-140" title="Go to source code">patternForNumberFloat</a>( )</code>
+
+		<div class="description short">
+			<p>Šablon za realan broj (float)
+Korisno kod pattern atributa kod ulaznih polja</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Šablon za realan broj (float)
+Korisno kod pattern atributa kod ulaznih polja</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateNumberFloat" id="_validateNumberFloat">
+
+		<td class="attributes"><code>
+			final public static
+
+			true|false
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateNumberFloat">#</a>
+		<code><a href="source-class-RegExHelper.html#142-151" title="Go to source code">validateNumberFloat</a>( <span>string <var>$input</var></span> )</code>
+
+		<div class="description short">
+			<p>Validacija celobrojnog broja (float)
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Validacija celobrojnog broja (float)
+Korisno kod provere u kontrolerima pri obradi formulara</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					true|false
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PIVT API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

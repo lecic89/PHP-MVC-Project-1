@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+
+	<title>File app/models/OfferModel.php | PIVT</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AdminAuthController.html">AdminAuthController</a></li>
+				<li><a href="class-AdminCityController.html">AdminCityController</a></li>
+				<li><a href="class-AdminInboxController.html">AdminInboxController</a></li>
+				<li><a href="class-AdminLoginController.html">AdminLoginController</a></li>
+				<li><a href="class-AdminModel.html">AdminModel</a></li>
+				<li><a href="class-AdminUserController.html">AdminUserController</a></li>
+				<li><a href="class-AdminUserLoginController.html">AdminUserLoginController</a></li>
+				<li><a href="class-AdminVehicleController.html">AdminVehicleController</a></li>
+				<li><a href="class-AuthController.html">AuthController</a></li>
+				<li><a href="class-CityModel.html">CityModel</a></li>
+				<li><a href="class-Config.html">Config</a></li>
+				<li><a href="class-ContactController.html">ContactController</a></li>
+				<li><a href="class-Controller.html">Controller</a></li>
+				<li><a href="class-DB.html">DB</a></li>
+				<li><a href="class-DeliveryCodeModel.html">DeliveryCodeModel</a></li>
+				<li><a href="class-Hash.html">Hash</a></li>
+				<li><a href="class-HomeController.html">HomeController</a></li>
+				<li><a href="class-Http.html">Http</a></li>
+				<li><a href="class-Logger.html">Logger</a></li>
+				<li><a href="class-MessageModel.html">MessageModel</a></li>
+				<li><a href="class-Misc.html">Misc</a></li>
+				<li><a href="class-Model.html">Model</a></li>
+				<li><a href="class-OfferModel.html">OfferModel</a></li>
+				<li><a href="class-PDO.html">PDO</a></li>
+				<li><a href="class-Redirect.html">Redirect</a></li>
+				<li><a href="class-RegExConstants.html">RegExConstants</a></li>
+				<li><a href="class-RegExHelper.html">RegExHelper</a></li>
+				<li><a href="class-Sanitize.html">Sanitize</a></li>
+				<li><a href="class-ServiceModel.html">ServiceModel</a></li>
+				<li><a href="class-Session.html">Session</a></li>
+				<li><a href="class-ShipmentModel.html">ShipmentModel</a></li>
+				<li><a href="class-ShipmentUpdateModel.html">ShipmentUpdateModel</a></li>
+				<li><a href="class-stdClass.html">stdClass</a></li>
+				<li><a href="class-UserController.html">UserController</a></li>
+				<li><a href="class-UserLoginModel.html">UserLoginModel</a></li>
+				<li><a href="class-UserModel.html">UserModel</a></li>
+				<li><a href="class-UserOfferController.html">UserOfferController</a></li>
+				<li><a href="class-UserServiceController.html">UserServiceController</a></li>
+				<li><a href="class-UserShipmentController.html">UserShipmentController</a></li>
+				<li><a href="class-VehicleModel.html">VehicleModel</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-ModelInterface.html">ModelInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Namespace</span>			</li>
+			<li>
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a href="#2"> 2: </a>
+</span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-comment">/**
+</span></span><span id="4" class="l"><a href="#4"> 4: </a><span class="php-comment"> * Model koji odgovara tabeli offer
+</span></span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment"> * Nasleđuje apstraktnu klasu Model
+</span></span><span id="6" class="l"><a href="#6"> 6: </a><span class="php-comment"> */</span>
+</span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-keyword1">class</span> OfferModel <span class="php-keyword1">extends</span> Model
+</span><span id="8" class="l"><a href="#8"> 8: </a>{
+</span><span id="9" class="l"><a href="#9"> 9: </a>
+</span><span id="10" class="l"><a href="#10">10: </a>    <span class="php-comment">/**
+</span></span><span id="11" class="l"><a href="#11">11: </a><span class="php-comment">     * Metod koji vraća sve redove iz tabele gde je service_id odgovarajuće vrednosti
+</span></span><span id="12" class="l"><a href="#12">12: </a><span class="php-comment">     * Funkcija CONCAT_WS je specifična za MySQL server, u slučaju promene na
+</span></span><span id="13" class="l"><a href="#13">13: </a><span class="php-comment">     * Oracle SQL ili neki drugi server obavezno je zameniti sa odgovarajućom
+</span></span><span id="14" class="l"><a href="#14">14: </a><span class="php-comment">     * funkcijom, npr. običan CONCAT
+</span></span><span id="15" class="l"><a href="#15">15: </a><span class="php-comment">     * @return array
+</span></span><span id="16" class="l"><a href="#16">16: </a><span class="php-comment">     */</span>
+</span><span id="17" class="l"><a href="#17">17: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> getAllByServiceId(<span class="php-var">$id</span>)
+</span><span id="18" class="l"><a href="#18">18: </a>    {
+</span><span id="19" class="l"><a href="#19">19: </a>        <span class="php-var">$sql</span> = <span class="php-quote">'SELECT
+</span></span><span id="20" class="l"><a href="#20">20: </a><span class="php-quote">                offer.id,
+</span></span><span id="21" class="l"><a href="#21">21: </a><span class="php-quote">                offer.user_id AS user_id,
+</span></span><span id="22" class="l"><a href="#22">22: </a><span class="php-quote">                CONCAT_WS(\' \', user.first_name, user.last_name) AS `user`,
+</span></span><span id="23" class="l"><a href="#23">23: </a><span class="php-quote">                offer.price AS price,
+</span></span><span id="24" class="l"><a href="#24">24: </a><span class="php-quote">                offer.description AS description
+</span></span><span id="25" class="l"><a href="#25">25: </a><span class="php-quote">                FROM offer
+</span></span><span id="26" class="l"><a href="#26">26: </a><span class="php-quote">                LEFT JOIN user ON offer.user_id = user.id
+</span></span><span id="27" class="l"><a href="#27">27: </a><span class="php-quote">                LEFT JOIN service ON offer.service_id = service.id
+</span></span><span id="28" class="l"><a href="#28">28: </a><span class="php-quote">                WHERE
+</span></span><span id="29" class="l"><a href="#29">29: </a><span class="php-quote">                offer.service_id = ?
+</span></span><span id="30" class="l"><a href="#30">30: </a><span class="php-quote">                ORDER BY `at` ASC
+</span></span><span id="31" class="l"><a href="#31">31: </a><span class="php-quote">                ;'</span>
+</span><span id="32" class="l"><a href="#32">32: </a>        ;
+</span><span id="33" class="l"><a href="#33">33: </a>        <span class="php-var">$pst</span> = DB::getInstance()-&gt;prepare(<span class="php-var">$sql</span>);
+</span><span id="34" class="l"><a href="#34">34: </a>        <span class="php-var">$pst</span>-&gt;execute([<span class="php-var">$id</span>]);
+</span><span id="35" class="l"><a href="#35">35: </a>        <span class="php-keyword1">return</span> <span class="php-var">$pst</span>-&gt;fetchAll(PDO::FETCH_OBJ);
+</span><span id="36" class="l"><a href="#36">36: </a>    }
+</span><span id="37" class="l"><a href="#37">37: </a>
+</span><span id="38" class="l"><a href="#38">38: </a>    <span class="php-comment">/**
+</span></span><span id="39" class="l"><a href="#39">39: </a><span class="php-comment">     * Metod koji vraća broj ponuda koje imaju istog korisnika i istu uslugu
+</span></span><span id="40" class="l"><a href="#40">40: </a><span class="php-comment">     * @param int $id
+</span></span><span id="41" class="l"><a href="#41">41: </a><span class="php-comment">     * @return int
+</span></span><span id="42" class="l"><a href="#42">42: </a><span class="php-comment">     */</span>
+</span><span id="43" class="l"><a href="#43">43: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> getCountById(<span class="php-var">$service_id</span>, <span class="php-var">$user_id</span>)
+</span><span id="44" class="l"><a href="#44">44: </a>    {
+</span><span id="45" class="l"><a href="#45">45: </a>        <span class="php-var">$sql</span> = <span class="php-quote">'SELECT id FROM offer WHERE service_id = ? AND user_id = ? ORDER BY id DESC;'</span>;
+</span><span id="46" class="l"><a href="#46">46: </a>        <span class="php-var">$pst</span> = DB::getInstance()-&gt;prepare(<span class="php-var">$sql</span>);
+</span><span id="47" class="l"><a href="#47">47: </a>        <span class="php-var">$pst</span>-&gt;execute([<span class="php-var">$service_id</span>, <span class="php-var">$user_id</span>]);
+</span><span id="48" class="l"><a href="#48">48: </a>        <span class="php-keyword1">return</span> <span class="php-var">$pst</span>-&gt;fetchAll(PDO::FETCH_OBJ);
+</span><span id="49" class="l"><a href="#49">49: </a>    }
+</span><span id="50" class="l"><a href="#50">50: </a>
+</span><span id="51" class="l"><a href="#51">51: </a>    <span class="php-comment">/**
+</span></span><span id="52" class="l"><a href="#52">52: </a><span class="php-comment">     * Metod koji uklanja ponude koje imaju određene id parametre
+</span></span><span id="53" class="l"><a href="#53">53: </a><span class="php-comment">     * @param array $ids
+</span></span><span id="54" class="l"><a href="#54">54: </a><span class="php-comment">     * @return TRUE|FALSE
+</span></span><span id="55" class="l"><a href="#55">55: </a><span class="php-comment">     */</span>
+</span><span id="56" class="l"><a href="#56">56: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> deleteByIds(<span class="php-var">$ids</span>)
+</span><span id="57" class="l"><a href="#57">57: </a>    {
+</span><span id="58" class="l"><a href="#58">58: </a>        <span class="php-var">$placeholders</span> = <span class="php-keyword2">array_fill</span>(<span class="php-num">0</span>, <span class="php-keyword2">count</span>(<span class="php-var">$ids</span>), <span class="php-quote">'?'</span>);
+</span><span id="59" class="l"><a href="#59">59: </a>        <span class="php-var">$sql</span> = <span class="php-quote">'DELETE FROM offer WHERE id IN ('</span>.<span class="php-keyword2">implode</span>(<span class="php-quote">','</span>, <span class="php-var">$placeholders</span>).<span class="php-quote">');'</span>;
+</span><span id="60" class="l"><a href="#60">60: </a>        <span class="php-var">$pst</span> = DB::getInstance()-&gt;prepare(<span class="php-var">$sql</span>);
+</span><span id="61" class="l"><a href="#61">61: </a>        <span class="php-keyword1">return</span> <span class="php-var">$pst</span>-&gt;execute(<span class="php-var">$ids</span>);
+</span><span id="62" class="l"><a href="#62">62: </a>    }
+</span><span id="63" class="l"><a href="#63">63: </a>
+</span><span id="64" class="l"><a href="#64">64: </a>}
+</span><span id="65" class="l"><a href="#65">65: </a></span></code></pre>
+
+	<div id="footer">
+		PIVT API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?fb9f36c1c370ce0d77e25e735b588d6cc965c5f2"></script>
+<script src="elementlist.js?5580508316ca92cf59ca5a4347800a36cbea0070"></script>
+</body>
+</html>
